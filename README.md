@@ -12,11 +12,11 @@ $ grunt // generates the js files and serves the project
 ##### To deploy
 ```
 $ grunt build // builds the static site in the "build" directory
-* git loop // (to push gh-pages branch to source remote)
+* git loop // (to push gh-pages branch containing everything to dev remote)
 $ git subtree push --prefix build prod gh-pages (to push only "build" directory to prod remote)
 ```
 
-Visit [http://localhost:8888](http://localhost:8888) to see the theme in action.
+Visit [http://localhost:8888](http://localhost:8888) to see changes.
 
 ##### Testing JSON changes
 Test changes by updating `resume.json` file inside `node_modules/resume-schema/` folder. Rerun `grunt` optional: `exec:run_server` after any changes to `resume.json`
