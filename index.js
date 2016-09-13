@@ -106,9 +106,9 @@ function render(resume) {
 
     if (!resume.basics.picture && hasEmail(resume)) {
         resume.basics.picture = gravatar.url(resume.basics.email.replace('(at)', '@'), {
-            s: '100',
-            r: 'pg',
-            d: 'mm'
+            s: '100'
+            // r: 'pg',
+            // d: 'mm'
         });
     }
 
